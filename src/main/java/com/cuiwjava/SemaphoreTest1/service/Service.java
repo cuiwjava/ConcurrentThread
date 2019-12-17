@@ -1,4 +1,4 @@
-package com.cuiwjava.SemaphoreTest1;
+package com.cuiwjava.SemaphoreTest1.service;
 
 import java.util.concurrent.Semaphore;
 
