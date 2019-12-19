@@ -8,6 +8,7 @@ public class Service {
 
 	public void testMethod() {
 		semaphore.acquireUninterruptibly();
+		// 不会被中断
 		System.out.println(Thread.currentThread().getName() + " begin timer="
 				+ System.currentTimeMillis());
 		for (int i = 0; i < Integer.MAX_VALUE / 50; i++) {
