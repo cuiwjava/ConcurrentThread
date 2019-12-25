@@ -1,0 +1,20 @@
+package com.cuiwjava.charpter02.CountDownLatch_wait_long.extthread;
+
+
+import com.cuiwjava.charpter02.CountDownLatch_wait_long.service.MyService;
+
+public class MyThread extends Thread {
+
+	private MyService service;
+
+	public MyThread(MyService service) {
+		super();
+		this.service = service;
+	}
+
+	@Override
+	public void run() {
+		service.testMethod();
+	}
+
+}
