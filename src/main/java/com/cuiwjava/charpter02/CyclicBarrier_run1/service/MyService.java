@@ -19,6 +19,7 @@ public class MyService {
 					+ System.currentTimeMillis() + " begin 跑第一阶段 "
 					+ (cbRef.getNumberWaiting() + 1));
 			cbRef.await();
+
 			System.out.println(Thread.currentThread().getName() + " "
 					+ System.currentTimeMillis() + "   end 跑第一阶段 " + " "
 					+ cbRef.getNumberWaiting());
@@ -29,6 +30,7 @@ public class MyService {
 					+ System.currentTimeMillis() + " begin 跑第二阶段 "
 					+ (cbRef.getNumberWaiting() + 1));
 			cbRef.await();
+
 			System.out.println(Thread.currentThread().getName() + " "
 					+ System.currentTimeMillis() + "   end 跑第二阶段 " + " "
 					+ cbRef.getNumberWaiting());
