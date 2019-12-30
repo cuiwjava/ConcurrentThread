@@ -5,12 +5,12 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class Run3_2 {
-	// ����ʹ��SynchronousQueue��
-	// �����߳�����>corePoolSizeʱ
-	// �����������Ҳ������У�������Ϊ8��
-	// ��û�г���maximumPoolSizeֵ
-	// �������е��߳���Ϊ8��������>corePoolSizeΪ7��ֵ
-	// ����keepAliveTime>5ʱ��������߳�
+	// 队列使用SynchronousQueue类
+	// 并且线程数量>corePoolSize时
+	// 将其余的任务也放入池中，总数量为8，
+	// 并没有超过maximumPoolSize值
+	// 由于运行的线程数为8，数量上>corePoolSize为7的值
+	// 所以keepAliveTime>5时清除空闲线程
 	public static void main(String[] args) throws InterruptedException {
 		Runnable runnable = new Runnable() {
 			@Override

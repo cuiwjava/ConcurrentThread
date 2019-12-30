@@ -5,10 +5,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class Run5 {
-	// ����ʹ��SynchronousQueue��
-	// �����߳�����>=corePoolSize
-	// �����߳�����<=maximumPoolSize
-	// ����keepAliveTimeֵΪ0ʱ�������߳�ִ����Ϻ��������
+	// 队列使用SynchronousQueue类
+	// 并且线程数量>=corePoolSize
+	// 并且线程数量<=maximumPoolSize
+	// 并且keepAliveTime值为0时作用是线程执行完毕后立即清除
 	public static void main(String[] args) throws InterruptedException {
 		Runnable runnable = new Runnable() {
 			@Override

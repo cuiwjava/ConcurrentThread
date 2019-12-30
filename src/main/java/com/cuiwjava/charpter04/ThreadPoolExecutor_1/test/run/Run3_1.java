@@ -40,6 +40,7 @@ public class Run3_1 {
 		System.out.println("B:" + executor.getCorePoolSize());
 		System.out.println("B:" + executor.getPoolSize());
 		System.out.println("B:" + executor.getQueue().size());
+		// 按钮呈红色，因为池中还有线程在等待任务
 	}
-	// ��ť�ʺ�ɫ����Ϊ���л����߳��ڵȴ�����
+	// 按钮呈红色，因为池中还有线程在等待任务
 }

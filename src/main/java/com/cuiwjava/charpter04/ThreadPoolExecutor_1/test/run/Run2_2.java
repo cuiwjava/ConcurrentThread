@@ -12,13 +12,15 @@ public class Run2_2 {
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
-				try {
+
+//				try {
 					System.out.println(Thread.currentThread().getName()
 							+ " run!" + System.currentTimeMillis());
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+//					Thread.sleep(1000);
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				}
+
 			}
 		};
 		ThreadPoolExecutor executor = new ThreadPoolExecutor(7, 8, 5,
@@ -38,6 +40,8 @@ public class Run2_2 {
 		System.out.println("B:" + executor.getCorePoolSize());
 		System.out.println("B:" + executor.getPoolSize());
 		System.out.println("B:" + executor.getQueue().size());
+
+//		executor.shutdown();
 	}
-	// ��ť�ʺ�ɫ����Ϊ���л����߳��ڵȴ�����
+	// 按钮呈红色，因为池中还有线程在等待任务
 }

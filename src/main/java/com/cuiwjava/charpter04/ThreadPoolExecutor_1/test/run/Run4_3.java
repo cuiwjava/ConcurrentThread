@@ -5,10 +5,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class Run4_3 {
-	// ����ʹ��SynchronousQueue��
-	// �߳�����>corePoolSize
-	// �����߳�����>maximumPoolSize
-	// ���Գ����쳣
+	// 队列使用SynchronousQueue类
+	// 线程数量>corePoolSize
+	// 并且线程数量>maximumPoolSize
+	// 所以出现异常
 	public static void main(String[] args) throws InterruptedException {
 		Runnable runnable = new Runnable() {
 			@Override
