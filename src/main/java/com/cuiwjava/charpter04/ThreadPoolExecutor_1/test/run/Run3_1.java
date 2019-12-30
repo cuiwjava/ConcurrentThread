@@ -5,10 +5,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class Run3_1 {
-	// ����ʹ��LinkedBlockingDeque��
-	// �����߳�����>corePoolSizeʱ�������������������
-	// ͬһʱ�����ֻ����7���߳�������
-	// ����keepAliveTime>5ʱҲ����������߳�
+	// 队列使用LinkedBlockingDeque类
+	// 并且线程数量>corePoolSize时将其余的任务放入队列中
+	// 同一时间最多只能有7个线程在运行
+	// 所以keepAliveTime>5时也不清除空闲线程
 	public static void main(String[] args) throws InterruptedException {
 		Runnable runnable = new Runnable() {
 			@Override
