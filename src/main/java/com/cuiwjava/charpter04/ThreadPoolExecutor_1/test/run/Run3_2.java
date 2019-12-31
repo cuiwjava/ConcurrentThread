@@ -43,6 +43,6 @@ public class Run3_2 {
 		System.out.println("B:" + executor.getPoolSize());
 		System.out.println("B:" + executor.getQueue().size());
 	}
-	// ��ť�ʺ�ɫ����Ϊ���л����߳��ڵȴ�����
-	// ɾ������>corePoolSize�Ķ����߳�
+// 按钮呈红色，因为池中还有线程在等待任务
+	// 删除的是>corePoolSize的多余线程
 }
