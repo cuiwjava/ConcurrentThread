@@ -9,7 +9,11 @@ public class MyRunnable implements Runnable {
 		this.username = username;
 	}
 
-	@Override
+    public MyRunnable() {
+
+    }
+
+    @Override
 	public void run() {
 		try {
 			System.out.println(Thread.currentThread().getName() + " username="
