@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit;
 public class ArrayBlockingQueueTest1 {
 
 	public static void main(String[] args) throws InterruptedException {
-		// ArrayBlockingQueueʹ�ô��ι���
-		//		// maxֵ���ο�
+		// ArrayBlockingQueue代餐够早
+		//		// max值呗参考
 		ArrayBlockingQueue array = new ArrayBlockingQueue(2);
 		System.out.println(array.size());
 		ThreadPoolExecutor pool = new ThreadPoolExecutor(2, 3, 5,

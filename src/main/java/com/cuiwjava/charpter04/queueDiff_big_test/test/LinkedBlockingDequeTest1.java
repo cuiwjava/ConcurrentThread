@@ -4,7 +4,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import myrunnable.MyRunnable;
+import com.cuiwjava.charpter04.queueDiff_big_test.myrunnable.MyRunnable;
 
 public class LinkedBlockingDequeTest1 {
 

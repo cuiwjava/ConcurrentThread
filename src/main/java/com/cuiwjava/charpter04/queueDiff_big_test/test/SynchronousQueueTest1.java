@@ -1,10 +1,11 @@
 package com.cuiwjava.charpter04.queueDiff_big_test.test;
 
+import com.cuiwjava.charpter04.queueDiff_big_test.myrunnable.MyRunnable;
+
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import myrunnable.MyRunnable;
 
 public class SynchronousQueueTest1 {
 
