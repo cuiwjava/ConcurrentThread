@@ -19,8 +19,8 @@ public class Run1 {
 			list.add(new MyCallableB1());
 
 			ExecutorService executor = Executors.newCachedThreadPool();
-			// invokeAnyֻȡ�������������Ľ��ֵ
-			String getValueA = executor.invokeAny(null);
+			// invokeAny  只取得最先完成任务的结果值
+			Object getValueA = executor.invokeAny(list);
 			System.out.println("============" + getValueA);
 			System.out.println("ZZZZZZZZZZZZZZZZ");
 		} catch (InterruptedException e) {
