@@ -20,7 +20,7 @@ public class Run {
 
 			ExecutorService executor = Executors.newCachedThreadPool();
 			System.out.println(executor);
-			String getValueA = executor.invokeAny(list);
+			Object getValueA = executor.invokeAny(list);
 			System.out.println("����ֵ" + getValueA);
 			System.out.println("mainEND");
 		} catch (InterruptedException e) {

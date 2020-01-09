@@ -21,7 +21,7 @@ public class Run {
 			list.add(new MyCallableA());
 
 			ExecutorService service = Executors.newCachedThreadPool();
-			String getString = service.invokeAny(list, 1, TimeUnit.SECONDS);
+			Object getString = service.invokeAny(list, 1, TimeUnit.SECONDS);
 			System.out.println("zzzz=" + getString);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
