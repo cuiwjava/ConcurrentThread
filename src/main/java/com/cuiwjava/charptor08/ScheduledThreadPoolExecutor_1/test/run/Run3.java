@@ -17,8 +17,7 @@ public class Run3 {
 			List<Callable> callableList = new ArrayList();
 			callableList.add(new MyCallableA());
 			callableList.add(new MyCallableB());
-			// ���÷���newScheduledThreadPool(1)
-			// ȡ��һ��������ļƻ�����ִ�г�
+			// newScheduledThreadPool(1)
 			ScheduledExecutorService executor = Executors
 					.newScheduledThreadPool(1);
 			ScheduledFuture<String> futureA = executor.schedule(callableList
