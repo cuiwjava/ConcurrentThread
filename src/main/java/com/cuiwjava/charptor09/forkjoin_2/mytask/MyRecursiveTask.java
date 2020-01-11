@@ -23,11 +23,11 @@ public class MyRecursiveTask extends RecursiveTask<Integer> {
 		if ((endPosition - beginPosition) != 0) {
 			System.out.println("!=0");
 			int middleNum = (endPosition + beginPosition) / 2;
-			System.out.println("left  �����ֵ:"
+			System.out.println("left  传入的值:"
 					+ (beginPosition + " " + middleNum));
 			MyRecursiveTask leftTask = new MyRecursiveTask(beginPosition,
 					middleNum);
-			System.out.println("right �����ֵ:"
+			System.out.println("right 传入的:"
 					+ ((middleNum + 1) + " " + endPosition));
 			MyRecursiveTask rightTask = new MyRecursiveTask(middleNum + 1,
 					endPosition);

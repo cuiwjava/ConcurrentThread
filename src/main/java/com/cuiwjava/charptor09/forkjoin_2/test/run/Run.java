@@ -13,7 +13,7 @@ public class Run {
 			MyRecursiveTask task = new MyRecursiveTask(1, 10);
 			ForkJoinPool pool = new ForkJoinPool();
 			pool.submit(task);
-			System.out.println("���ֵΪ��" + task.get());
+			System.out.println("结果值为" + task.get());
 		} catch (ExecutionException e) {
 			e.printStackTrace();
 		}
