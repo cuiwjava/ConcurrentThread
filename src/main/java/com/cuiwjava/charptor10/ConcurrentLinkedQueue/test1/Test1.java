@@ -1,0 +1,26 @@
+package com.cuiwjava.charptor10.ConcurrentLinkedQueue.test1;
+
+import com.cuiwjava.charptor10.ConcurrentLinkedQueue.myservice.MyService1;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		try {
+			MyService1 service = new MyService1();
+			ThreadA a = new ThreadA(service);
+			ThreadB b = new ThreadB(service);
+
+			a.start();
+			b.start();
+			a.join();
+			b.join();
+
+			System.out.println(service.queue.size());
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
