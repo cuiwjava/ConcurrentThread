@@ -13,7 +13,7 @@ public class Test11 {
 		set.add(2);
 
 		// subSet(1, 10)
-		// >=1��<10
+		// >=1 and <10
 		set = (TreeSet) set.subSet(1, 10);
 		Iterator iterator = set.iterator();
 		while (iterator.hasNext()) {
