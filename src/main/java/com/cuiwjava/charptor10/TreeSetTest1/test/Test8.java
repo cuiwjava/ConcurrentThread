@@ -13,7 +13,7 @@ public class Test8 {
 		set.add(1);
 		set.add(2);
 
-		// headSet:��С��<10
+		// headSet:最小到<10
 		Set newSet = set.headSet(10);
 		Iterator iterator = newSet.iterator();
 		while (iterator.hasNext()) {
