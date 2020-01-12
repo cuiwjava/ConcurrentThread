@@ -8,7 +8,7 @@ public class drainTo_1 {
 
 	public static void main(String[] args) {
 		// drainTo:
-		// �Ƴ��˶��������п��õ�Ԫ�أ�����������ӵ����� collection �С�
+		// 移除此队列中所有可用的元素，并将它们添加到给定 collection 中。
 		ArrayBlockingQueue queue = new ArrayBlockingQueue(5);
 		queue.add("myString1");
 		queue.add("myString2");

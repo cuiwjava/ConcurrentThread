@@ -6,7 +6,7 @@ public class peek {
 
 	public static void main(String[] args) {
 		// peek:
-		// ���������ǲ��Ƴ��˶��е�ͷ������˶���Ϊ�գ��򷵻� null��
+		// 检索，但是不移除此队列的头，如果此队列为空，则返回 null。
 		ArrayBlockingQueue queue = new ArrayBlockingQueue(3);
 		System.out.println(queue.peek());
 		System.out.println(queue.offer("myString1"));

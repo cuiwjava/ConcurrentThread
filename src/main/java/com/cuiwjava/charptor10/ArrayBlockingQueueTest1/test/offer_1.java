@@ -5,7 +5,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class offer_1 {
 
 	public static void main(String[] args) {
-		// offer������Ч����δ�ɹ�����򷵻�false
+		// offer无阻塞效果，未成功添加则返回false
 		ArrayBlockingQueue queue = new ArrayBlockingQueue(3);
 		System.out.println(queue.offer("myString1"));
 		System.out.println(queue.offer("myString2"));

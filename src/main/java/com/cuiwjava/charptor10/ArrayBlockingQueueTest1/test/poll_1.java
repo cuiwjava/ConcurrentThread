@@ -6,7 +6,7 @@ public class poll_1 {
 
 	public static void main(String[] args) {
 		// poll:
-		// �������Ƴ��˶��е�ͷ������˶���Ϊ�գ��򷵻� null��
+		// 检索并移除此队列的头，如果此队列为空，则返回 null。
 		ArrayBlockingQueue queue = new ArrayBlockingQueue(3);
 		System.out.println(queue.poll());
 		System.out.println(queue.offer("myString1"));
